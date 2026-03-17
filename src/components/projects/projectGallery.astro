@@ -1,16 +1,15 @@
 ---
 // src/components/projects/ProjectGallery.astro
 import { Image } from "astro:assets";
-import closeCursor from "../../assets/cursors/projects-close-cursor.svg";
 ---
 
 <dialog id="project-dialog" class="project-modal">
   <button id="close-dialog">
     <Image
-      src={closeCursor}
+      src="/gra126/kiko_rg/uniko/cursors/projects-close-cursor.svg"
       alt="Close dialog"
-      width={closeCursor.width}
-      height={closeCursor.height}
+      width={293}
+      height={293}
     />
     <span>close</span>
   </button>

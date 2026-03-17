@@ -1,12 +1,12 @@
 ---
 let navLinks = [
     {
-        href: "/emile/",
+        href: "/gra126/kiko_rg/uniko/emile/",
         label: "Emile",
         className: "nav--emile",
     },
     {
-        href: "/pascale/",
+        href: "/gra126/kiko_rg/uniko/pascale/",
         label: "Pascale",
         className: "nav--pascale",
     },
@@ -16,8 +16,11 @@ const currentPath = Astro.url.pathname;
 ---
 
 <nav>
-    <a href="/" class="nav--logo"
-        ><img src="/assets/logo/logo_uniko.svg" alt="" /></a
+    <a href="/gra126/kiko_rg/uniko/" class="nav--logo"
+        ><img
+            src="/gra126/kiko_rg/uniko/assets/logo/logo_uniko.svg"
+            alt=""
+        /></a
     >
     {
         navLinks.map((link) => (
@@ -45,7 +48,6 @@ const currentPath = Astro.url.pathname;
             padding-right: 1rem;
             display: flex;
             flex-direction: row;
-            gap: 0.5rem;
             align-content: center;
         }
 
@@ -68,7 +70,7 @@ const currentPath = Astro.url.pathname;
     }
 
     .nav--logo {
-        width: 100%;
+        width: 110%;
         max-width: 10rem;
     }
 
@@ -95,5 +97,6 @@ const currentPath = Astro.url.pathname;
     .nav--pascale:hover .nav--hover-arrow {
         max-width: 1.5rem;
         opacity: 1;
+        margin-right: 0.5rem;
     }
 </style>

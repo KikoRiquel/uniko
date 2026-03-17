@@ -77,36 +77,13 @@ const getCover = (id: string) => {
 
     import { mouseFollower } from "@/lib/mouseFollower";
     mouseFollower("#project-cursor", ".projects-container");
-
-    // --- LÓGICA DE CURSOR (GSAP) ---
-    // const pill = document.querySelector("#project-cursor");
-    // const container = document.querySelector(".projects-container");
-
-    // const xTo = gsap.quickTo(pill, "x", { duration: 0.6, ease: "power3" });
-    // const yTo = gsap.quickTo(pill, "y", { duration: 0.6, ease: "power3" });
-
-    // container.addEventListener("mousemove", (e) => {
-    //     const rect = container.getBoundingClientRect();
-    //     const x = e.clientX - rect.left + 50;
-    //     const y = e.clientY - rect.top - 50;
-
-    //     xTo(x);
-    //     yTo(y);
-    // });
-
-    // container.addEventListener("mouseleave", () => {
-    //     gsap.to(pill, { opacity: 0 });
-    // });
-
-    // container.addEventListener("mouseenter", () => {
-    //     gsap.to(pill, { opacity: 1 });
-    // });
 </script>
 
 <style>
     .projects-container {
         position: relative;
-        cursor: url("/src/assets/cursors/projects-cursor.svg"), default;
+        cursor:
+            url("/gra126/kiko_rg/uniko/cursors/projects-cursor.svg"), default;
         overflow: hidden;
     }
     .grid {
